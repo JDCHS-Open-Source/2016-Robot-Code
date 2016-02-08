@@ -4,6 +4,7 @@
 #include "Commands/ArmBackward.h"
 #include "Commands/TimedLinearDrive.h"
 #include "Commands/CTTurn.h"
+#include "Commands/CTTurnGroup.h"
 
 OI::OI()
 {
@@ -26,13 +27,13 @@ OI::OI()
 
 	b1->WhileHeld(new ArmForward());
 	b2->WhileHeld(new ArmBackward());
-	b4->WhileHeld(new CTTurn(leftRev));
-	b5->WhileHeld(new CTTurn(rightForw));
+	b4->WhileHeld(new CTTurnGroup(leftRev));
+	b5->WhileHeld(new CTTurnGroup(rightForw));
 
-	b6->WhileHeld(new CTTurn(leftForw));
-	b7->WhileHeld(new CTTurn(leftRev));
-	b11->WhileHeld(new CTTurn(rightForw));
-	b10->WhileHeld(new CTTurn(rightRev));
+	b6->WhileHeld(new CTTurnGroup(leftForw));
+	b7->WhileHeld(new CTTurnGroup(leftRev));
+	b11->WhileHeld(new CTTurnGroup(rightForw));
+	b10->WhileHeld(new CTTurnGroup(rightRev));
 }
 
 Joystick *OI::GetDriveJoy()

@@ -1,6 +1,7 @@
 #include "CTTurn.h"
+#include "../CommandBase.h"
 
-CTTurn::CTTurn(TurnDirection d)
+CTTurn::CTTurn(TurnDirection d, float p)
 {
 	// Use Requires() here to declare subsystem dependencies
 	Requires(chassis);
@@ -11,13 +12,13 @@ CTTurn::CTTurn(TurnDirection d)
 void CTTurn::Initialize()
 {
 	chassis->Stop();
-	chassis->SetTurn(dir, 1, 1);
+	chassis->SetTurn(dir, power, power);
 }
 
 // Called repeatedly when this Command is scheduled to run
 void CTTurn::Execute()
 {
-	chassis->SetTurn(dir, 1, 1);
+	chassis->SetTurn(dir, power, power);
 }
 
 // Make this return true when this Command no longer needs to run execute()

@@ -69,20 +69,20 @@ void DriveMotors::SetTurn(TurnDirection direction, float front, float back)
 {
 	switch (direction) {
 	case leftRev:
-		leftFront->Set(-1);
-		leftBack->Set(-0.5);
+		leftFront->Set(-back);
+		leftBack->Set(-front);
 		break;
 	case rightForw:
-		rightFront->Set(-0.5);
-		rightBack->Set(-1);
+		rightFront->Set(-front);
+		rightBack->Set(-back);
 		break;
 	case rightRev:
-		rightFront->Set(1);
-		rightBack->Set(0.5);
+		rightFront->Set(back);
+		rightBack->Set(front);
 		break;
 	case leftForw:
-		leftFront->Set(0.5);
-		leftBack->Set(1);
+		leftFront->Set(front);
+		leftBack->Set(back);
 		break;
 	}
 }

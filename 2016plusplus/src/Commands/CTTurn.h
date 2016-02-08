@@ -16,8 +16,9 @@ class CTTurn: public CommandBase
 {
 private:
 	TurnDirection dir;
+	float power;
 public:
-	CTTurn(TurnDirection d);
+	CTTurn(TurnDirection d, float p);
 	void Initialize();
 	void Execute();
 	bool IsFinished();
