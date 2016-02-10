@@ -1,11 +1,14 @@
 #include "CTTurn.h"
 #include "../CommandBase.h"
 
-CTTurn::CTTurn(TurnDirection d, float p)
+CTTurn::CTTurn(TurnDirection d, float p, double timeout = 0.0)
 {
 	// Use Requires() here to declare subsystem dependencies
 	Requires(chassis);
 	dir = d;
+	if(timeout == 0) {
+	SetTimeout(timeout);
+	}
 }
 
 // Called just before this Command runs the first time

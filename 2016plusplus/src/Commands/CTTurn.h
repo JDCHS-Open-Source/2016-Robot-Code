@@ -18,7 +18,7 @@ private:
 	TurnDirection dir;
 	float power;
 public:
-	CTTurn(TurnDirection d, float p);
+	CTTurn(TurnDirection d, float p, double timeout = 0.0);
 	void Initialize();
 	void Execute();
 	bool IsFinished();

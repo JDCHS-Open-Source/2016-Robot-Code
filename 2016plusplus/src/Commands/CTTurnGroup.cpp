@@ -3,10 +3,10 @@
 
 CTTurnGroup::CTTurnGroup(TurnDirection dir)
 {
-	AddSequential(new CTTurn(dir, 0.2));
-	AddSequential(new CTTurn(dir, 0.4));
-	AddSequential(new CTTurn(dir, 0.6));
-	AddSequential(new CTTurn(dir, 0.8));
+	AddSequential(new CTTurn(dir, 0.2, 0.3));
+	AddSequential(new CTTurn(dir, 0.4, 0.3));
+	AddSequential(new CTTurn(dir, 0.6, 0.3));
+	AddSequential(new CTTurn(dir, 0.8, 0.3));
 	AddSequential(new CTTurn(dir, 1));
 	// Add Commands here:
 	// e.g. AddSequential(new Command1());
