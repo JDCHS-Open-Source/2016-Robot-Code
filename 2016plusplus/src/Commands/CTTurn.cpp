@@ -5,6 +5,7 @@ CTTurn::CTTurn(TurnDirection d, float p, double timeout = 0.0)
 {
 	// Use Requires() here to declare subsystem dependencies
 	Requires(chassis);
+	power = p;
 	dir = d;
 	if(timeout == 0) {
 	SetTimeout(timeout);
