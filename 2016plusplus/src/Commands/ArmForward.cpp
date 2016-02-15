@@ -1,10 +1,11 @@
 #include "ArmForward.h"
 
-ArmForward::ArmForward()
+ArmForward::ArmForward(double timeout)
 {
 	// Use Requires() here to declare subsystem dependencies
 	// eg. Requires(chassis);
 	Requires(robotArm);
+	SetTimeout(timeout);
 }
 
 // Called just before this Command runs the first time
@@ -22,7 +23,7 @@ void ArmForward::Execute()
 // Make this return true when this Command no longer needs to run execute()
 bool ArmForward::IsFinished()
 {
-	return false;
+	return IsTimedOut();
 }
 
 // Called once after isFinished returns true
