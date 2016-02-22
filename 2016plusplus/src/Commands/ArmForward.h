@@ -7,7 +7,7 @@
 class ArmForward: public CommandBase
 {
 public:
-	ArmForward();
+	ArmForward(double timeforout);
 	void Initialize();
 	void Execute();
 	bool IsFinished();
