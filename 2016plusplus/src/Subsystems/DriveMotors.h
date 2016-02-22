@@ -25,7 +25,7 @@ public:
 	void ArcadeDrive(float x, float y);
 	void TankDrive(float left, float right);
 	void Set(float fL, float fR, float bL, float bR);
-	void SetTurn(TurnDirection d, float front, float back);
+//	void SetTurn(TurnDirection d, float front, float back);
 };
 
 #endif

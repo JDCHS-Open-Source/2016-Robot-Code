@@ -26,13 +26,13 @@ OI::OI()
 
 	b1->WhileHeld(new ArmForward());
 	b2->WhileHeld(new ArmBackward());
-	b4->WhileHeld(new CTTurn(leftRev));
-	b5->WhileHeld(new CTTurn(rightForw));
-
-	b6->WhileHeld(new CTTurn(leftForw));
-	b7->WhileHeld(new CTTurn(leftRev));
-	b11->WhileHeld(new CTTurn(rightForw));
-	b10->WhileHeld(new CTTurn(rightRev));
+//	b4->WhileHeld(new CTTurn(leftRev));
+//	b5->WhileHeld(new CTTurn(rightForw));
+//
+//	b6->WhileHeld(new CTTurn(leftForw));
+//	b7->WhileHeld(new CTTurn(leftRev));
+//	b11->WhileHeld(new CTTurn(rightForw));
+//	b10->WhileHeld(new CTTurn(rightRev));
 }
 
 Joystick *OI::GetDriveJoy()

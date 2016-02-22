@@ -65,26 +65,26 @@ void DriveMotors::Set(float fL, float fR, float bL, float bR)
 	rightBack->Set(bR);
 }
 
-void DriveMotors::SetTurn(TurnDirection direction, float front, float back)
-{
-	switch (direction) {
-	case leftRev:
-		leftFront->Set(-1);
-		leftBack->Set(-0.5);
-		break;
-	case rightForw:
-		rightFront->Set(-0.5);
-		rightBack->Set(-1);
-		break;
-	case rightRev:
-		rightFront->Set(1);
-		rightBack->Set(0.5);
-		break;
-	case leftForw:
-		leftFront->Set(0.5);
-		leftBack->Set(1);
-		break;
-	}
-}
-// Put methods for controlling this subsystem
+//void DriveMotors::SetTurn(TurnDirection direction, float front, float back)
+//{
+//	switch (direction) {
+//	case leftRev:
+//		leftFront->Set(-1);
+//		leftBack->Set(-0.5);
+//		break;
+//	case rightForw:
+//		rightFront->Set(-0.5);
+//		rightBack->Set(-1);
+//		break;
+//	case rightRev:
+//		rightFront->Set(1);
+//		rightBack->Set(0.5);
+//		break;
+//	case leftForw:
+//		leftFront->Set(0.5);
+//		leftBack->Set(1);
+//		break;
+//	}
+//}
+//// Put methods for controlling this subsystem
 // here. Call these from Commands.

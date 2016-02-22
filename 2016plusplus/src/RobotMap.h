@@ -21,7 +21,7 @@
 //const int RANGE_FINDER_MODULE = 1;
 const int LEFTFRONT = 0;
 const int LEFTBACK = 2;
-const int RIGHTFRONT = 1;
+const int RIGHTFRONT = 9;
 const int RIGHTBACK = 3;
 const int ROBOTARM = 4;
 
