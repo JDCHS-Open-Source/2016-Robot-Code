@@ -6,6 +6,8 @@
 
 BasicAuto::BasicAuto()
 {
-	AddSequential(new ArmForward(0.5));
-	AddSequential(new TimedLinearDrive(5, forward));
+	float armTime = SmartDashboard::GetNumber("DB/Slider 0", 0.2);
+	float driveTime = SmartDashboard::GetNumber("DB/Slider 1", 2);
+	AddSequential(new ArmForward(armTime));
+	AddSequential(new TimedLinearDrive(driveTime, forward));
 }
