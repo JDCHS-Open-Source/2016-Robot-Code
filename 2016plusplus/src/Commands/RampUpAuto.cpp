@@ -20,5 +20,5 @@ RampUpAuto::RampUpAuto()
 	// arm.
 
 	AddSequential(new TimedLinearDrive(0.5,0.5,forward));
-	AddSequential(new TimedLinearDrive(1.5,.75,forward));
+	AddSequential(new TimedLinearDrive(1.0,.75,forward));
 }

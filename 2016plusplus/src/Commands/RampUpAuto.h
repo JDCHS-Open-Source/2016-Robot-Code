@@ -3,6 +3,7 @@
 
 #include "Commands/CommandGroup.h"
 #include "WPILib.h"
+#include "TimedLinearDrive.h"
 
 class RampUpAuto: public CommandGroup
 {

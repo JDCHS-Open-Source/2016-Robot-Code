@@ -6,6 +6,6 @@
 
 BasicAuto::BasicAuto()
 {
-	AddSequential(new ArmForward(0.3));
-	AddSequential(new TimedLinearDrive(2,0.5, forward));
+	AddSequential(new ArmForward(0.2));
+	AddSequential(new TimedLinearDrive(1.0,0.25, forward));
 }
