@@ -14,8 +14,9 @@ class TimedLinearDrive: public CommandBase
 {
 private:
 	LinearDirection dir;
+	float power;
 public:
-	TimedLinearDrive(double timeout, LinearDirection direction);
+	TimedLinearDrive(double timeout, float pow, LinearDirection direction);
 	void Initialize();
 	void Execute();
 	bool IsFinished();

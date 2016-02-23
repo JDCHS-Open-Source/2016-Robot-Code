@@ -15,12 +15,12 @@ void RoboArm::InitDefaultCommand()
 
 void RoboArm::ArmIn()
 {
-	roboArm->Set(1);
+	roboArm->Set(-1);
 }
 
 void RoboArm::ArmOut()
 {
-	roboArm->Set(-1);
+	roboArm->Set(1);
 }
 
 void RoboArm::Stop()
