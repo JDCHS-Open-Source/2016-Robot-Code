@@ -20,7 +20,7 @@ OI::OI()
 	b7 = new JoystickButton(driveJoy, 7);
 	b8 = new JoystickButton(driveJoy, 8);
 	b9 = new JoystickButton(driveJoy, 9);
-	b10 = new JoystickButton(driveJoy, 10);
+	b10= new JoystickButton(driveJoy, 10);
 	b11= new JoystickButton(driveJoy, 11);
 
 
