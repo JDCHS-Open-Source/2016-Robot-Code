@@ -19,8 +19,8 @@ private:
 public:
 	DriveMotors();
 	void InitDefaultCommand();
-	void DriveForward();
-	void DriveBackward();
+	void DriveForward(float power);
+	void DriveBackward(float power);
 	void Stop();
 	void ArcadeDrive(float x, float y);
 	void TankDrive(float left, float right);

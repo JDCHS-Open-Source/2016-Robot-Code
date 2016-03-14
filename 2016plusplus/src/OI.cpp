@@ -20,11 +20,11 @@ OI::OI()
 	b7 = new JoystickButton(driveJoy, 7);
 	b8 = new JoystickButton(driveJoy, 8);
 	b9 = new JoystickButton(driveJoy, 9);
-	b10 = new JoystickButton(driveJoy, 10);
+	b10= new JoystickButton(driveJoy, 10);
 	b11= new JoystickButton(driveJoy, 11);
 
 
-	b1->WhileHeld(new ArmForward());
+	b1->WhileHeld(new ArmForward(1.0));
 	b2->WhileHeld(new ArmBackward());
 //	b4->WhileHeld(new CTTurn(leftRev));
 //	b5->WhileHeld(new CTTurn(rightForw));

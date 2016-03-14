@@ -23,20 +23,20 @@ void DriveMotors::InitDefaultCommand()
 	SetDefaultCommand(c);
 }
 
-void DriveMotors::DriveForward()
+void DriveMotors::DriveForward(float power)
 {
-	leftFront->Set(-1);
-	rightFront->Set(1);
-	leftBack->Set(-1);
-	rightBack->Set(1);
+	leftFront->Set(power);
+	rightFront->Set(-power);
+	leftBack->Set(power);
+	rightBack->Set(-power);
 }
 
-void DriveMotors::DriveBackward()
+void DriveMotors::DriveBackward(float power)
 {
-	leftFront->Set(1);
-	rightFront->Set(-1);
-	leftBack->Set(1);
-	rightBack->Set(-1);
+	leftFront->Set(power);
+	rightFront->Set(-power);
+	leftBack->Set(power);
+	rightBack->Set(-power);
 }
 
 void DriveMotors::Stop()
