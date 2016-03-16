@@ -7,6 +7,7 @@
 DriveMotors* CommandBase::chassis = NULL;
 RoboArm* CommandBase::robotArm = NULL;
 OI* CommandBase::oi = NULL;
+Grabber* CommandBase::grabber = NULL;
 
 CommandBase::CommandBase(char const *name) :
 		Command(name)
@@ -26,5 +27,6 @@ void CommandBase::init()
 	// line should be repeated for each subsystem in the project.
 	chassis = new DriveMotors();
 	robotArm = new RoboArm();
+	grabber = new Grabber();
 	oi = new OI();
 }

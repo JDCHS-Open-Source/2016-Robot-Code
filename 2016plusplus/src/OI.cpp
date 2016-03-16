@@ -3,7 +3,7 @@
 #include "Commands/ArmForward.h"
 #include "Commands/ArmBackward.h"
 #include "Commands/TimedLinearDrive.h"
-#include "Commands/CTTurn.h"
+#include "Commands/EngageGrabber.h"
 
 OI::OI()
 {
@@ -26,7 +26,7 @@ OI::OI()
 
 	b1->WhileHeld(new ArmForward(1.0));
 	b2->WhileHeld(new ArmBackward());
-//	b4->WhileHeld(new CTTurn(leftRev));
+	b4->WhileHeld(new EngageGrabber());
 //	b5->WhileHeld(new CTTurn(rightForw));
 //
 //	b6->WhileHeld(new CTTurn(leftForw));

@@ -24,5 +24,7 @@ const int LEFTBACK = 2;
 const int RIGHTFRONT = 9;
 const int RIGHTBACK = 3;
 const int ROBOTARM = 4;
+const int RIGHTSERVO = 6;
+const int LEFTSERVO = 5;
 
 #endif
