@@ -6,6 +6,7 @@
 //#include "Subsystems/ExampleSubsystem.h"
 #include "Subsystems/DriveMotors.h"
 #include "Subsystems/RoboArm.h"
+#include "Subsystems/Grabber.h"
 #include "OI.h"
 #include "WPILib.h"
 
@@ -24,6 +25,7 @@ public:
 	static DriveMotors *chassis;
 	static OI *oi;
 	static RoboArm *robotArm;
+	static Grabber *grabber;
 };
 
 #endif

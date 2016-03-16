@@ -12,6 +12,7 @@ TimedLinearDrive::TimedLinearDrive(double timeout, float pow, LinearDirection di
 // Called just before this Command runs the first time
 void TimedLinearDrive::Initialize()
 {
+	SmartDashboard::PutString("Drive Status", "Timed Linear");
 	chassis->Stop();
 }
 

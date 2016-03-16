@@ -14,6 +14,7 @@ ContinuousDrive::ContinuousDrive()
 void ContinuousDrive::Initialize()
 {
 	chassis->Stop();
+	SmartDashboard::PutString("Drive Status", "Continuous");
 }
 
 // Called repeatedly when this Command is scheduled to run

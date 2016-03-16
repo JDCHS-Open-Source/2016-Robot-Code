@@ -12,6 +12,7 @@ ArmForward::ArmForward(double timeout)
 void ArmForward::Initialize()
 {
 	robotArm->Stop();
+	SmartDashboard::PutString("Arm Status", "Arm Engaged Forward");
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -30,6 +31,8 @@ bool ArmForward::IsFinished()
 void ArmForward::End()
 {
 	robotArm->Stop();
+	SmartDashboard::PutString("Arm Status", "Arm Disabled");
+
 }
 
 // Called when another command which requires one or more of the same
